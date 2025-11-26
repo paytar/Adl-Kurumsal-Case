@@ -1,0 +1,127 @@
+.footer {
+  width: 100%;
+  background: #f0f0f0;
+  margin-top: -120px;
+  z-index: -1;
+  padding: 60px 40px 40px;
+  font-family: "Satoshi", sans-serif;
+  color: #111;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    padding-top: 65px;
+    border-bottom: 1px solid #c9c9c6;
+  }
+
+  .footer-brand {
+    max-width: 260px;
+
+    .logo {
+      font-size: 28px;
+      font-style: bold;
+      font-family: "integralcf", sans-serif;
+      font-weight: 900;
+    }
+
+    .brand-desc {
+      color: #6b7280;
+      margin: 12px 0 20px;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+
+      img {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .col {
+      min-width: 140px;
+
+      h4 {
+        font-size: 14px;
+        font-weight: 900;
+        font-family: "integralcf", sans-serif;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #4b5563;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9ca3af;
+    font-size: 14px;
+
+    .cards {
+      display: flex;
+      img {
+        height: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer {
+    width: 100%;
+    font-family: "Satoshi", sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+  }
+  .footer-columns {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
+  }
+  .footer-columns .col {
+    min-width: unset;
+  }
+}

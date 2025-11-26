@@ -1,0 +1,37 @@
+.reviews-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 24px;
+
+  .load-more {
+    grid-column: span 2;
+    margin: 20px auto 0;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    padding: 10px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 20%;
+
+    &:hover {
+      background: #f3f4f6;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-list {
+    grid-template-columns: 1fr; 
+    gap: 24px;
+  }
+
+  .reviews-list .load-more {
+    grid-column: 1 / -1;   
+    width: 100%;           
+    max-width: 200px;      
+    margin-top: 0px;   
+    margin-bottom: -40px;
+    padding: 16px;
+  }
+}

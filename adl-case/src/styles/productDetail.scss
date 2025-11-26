@@ -1,0 +1,81 @@
+.product-detail-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem;
+
+  .product-section {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
+  .review-tabs {
+    margin-top: 3rem;
+    border-bottom: 1px solid #e2e2e2;
+
+    .tab-buttons {
+      display: flex;
+      gap: 2rem;
+
+      button {
+        background: none;
+        border: none;
+        padding: 1rem 0;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .active {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+
+  .reviews-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .related-products-title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .related-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .product-section {
+      flex-direction: column;
+    }
+
+    .reviews-list {
+      grid-template-columns: 1fr;
+    }
+
+    .related-products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .related-products {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+ .reviews-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
